@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+    --primary-color-red: rgb(255, 122, 122);
+    --primary-color-green: rgb(56, 203, 139);
+    --accent-color: rgb(95, 84, 164);
+    --neutral-color-dark: rgba(127, 127, 127, 0.823);
+    --neutral-color-light: rgba(229, 228, 238, 0.932);
+    --font-primary: "Poppins", serif;
+    --size: 16px;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--size);
+    color: var(--neutral-color-light);
+    background-color: var(--primary-color-red);
+    background-image: url(./assets/bg-intro-mobile.png);
+    min-width: 270px;
+}
+
+h1 {
+    font-weight: 700;
+    font-style: normal;
+}
+
+.terms {
+    font-size: 0.8rem;
+    text-align: center;
+    color: var(--neutral-color-dark);
+    margin: 1rem;
+    span {
+        font-weight: 600;
+        font-style: normal;
+        color: var(--primary-color-red);
+    }
+}
+
+.responsive {
+    display: flex;
+    flex-direction: column;
+}
+
+.principal-info,
+.secondary-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.principal-info {
+    text-align: center;
+    padding: auto;
+    p {
+        font-weight: 500;
+        font-style: normal;
+        margin: 1rem;
+    }
+}
+
+.secondary-info {
+    text-align: center;
+    padding: 1rem;
+}
+
+.special-offer {
+    width: auto;
+    background-color: var(--accent-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    span {
+        font-weight: 600;
+        font-style: normal;
+    }
+    button {
+        background-color: transparent;
+        border: 0;
+        color: var(--neutral-color-light);
+    }
+}
+
+.signup form {
+    width: auto;
+    border: 0;
+    margin: 1rem;
+    padding: 1rem;
+    gap: 2rem;
+    border-radius: 0.5rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        margin: 1rem;
+        gap: 1rem;
+        padding: 1rem;
+        color: var(--neutral-color-dark);
+        input {
+            padding: 1rem;
+        }
+    }
+}
+
+.signup .signup-btn {
+    border: 0;
+    background-color: var(--primary-color-green);
+    color: var(--neutral-color-light);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+@media (min-width: 375px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
